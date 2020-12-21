@@ -1,7 +1,7 @@
     {
       "parent": "block/cube_all",
       "textures": {
-        "all": "kg-bm-merrymodjam:block/santanium_ore"
+        "all": "santanium-decorations:block/santanium_ore"
       }
     }
 

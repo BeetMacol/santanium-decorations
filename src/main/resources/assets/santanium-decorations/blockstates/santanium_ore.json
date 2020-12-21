@@ -1,6 +1,6 @@
     {
       "variants": {
-        "": { "model": "kg-bm-merrymodjam:block/santanium_ore" }
+        "": { "model": "santanium-decorations:block/santanium_ore" }
       }
     }
 
