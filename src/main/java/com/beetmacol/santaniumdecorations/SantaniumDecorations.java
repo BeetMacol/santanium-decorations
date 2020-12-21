@@ -15,7 +15,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class SantaniumDecorations implements ModInitializer {
-	Logger logger = LogManager.getLogger(SantaniumDecorations.class);
+
+	public static final String MOD_ID = "santanium-decorations";
+	public static final Logger LOGGER = LogManager.getLogger(SantaniumDecorations.class);
 
 	public static String MODID = "santanium-decorations";
 
@@ -23,7 +25,8 @@ public class SantaniumDecorations implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		logger.info("HO HO HO!");
+		LOGGER.info("HO HO HO!");
+		Items.registerItems();
 
 		Registry.register(Registry.BLOCK, new Identifier(MODID, "santanium_ore"), SANTANIUM_ORE);
 		Registry.register(Registry.ITEM, new Identifier(MODID, "santanium_ore"), new BlockItem(SANTANIUM_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
