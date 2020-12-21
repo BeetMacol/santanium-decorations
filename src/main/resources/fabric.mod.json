@@ -1,37 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "kg-bm-merrymodjam",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Merry ModJam 2020 submission",
+  "description": "A mod for Merry ModJam without a name by Kubagliko_PL and BeetMacol",
   "authors": [
-    "Me!"
+    "Kubagliko_PL",
+    "BeetMacol"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/BeetMacol/merry-modjam-mod"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.beetmacol.merrymodjam2020.MerryModJam2020"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "kg-bm-merrymodjam.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
