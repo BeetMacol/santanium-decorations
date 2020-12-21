@@ -21,14 +21,14 @@ public class SantaniumDecorations implements ModInitializer {
 
 	public static String MODID = "santanium-decorations";
 
-	public static final Block SANTANIUM_ORE = new Block(AbstractBlock.Settings.copy(Blocks.REDSTONE_ORE));
+	//public static final Block SANTANIUM_ORE = new Block(AbstractBlock.Settings.copy(Blocks.REDSTONE_ORE));
 
 	@Override
 	public void onInitialize() {
 		LOGGER.info("HO HO HO!");
 		Items.registerItems();
 
-		Registry.register(Registry.BLOCK, new Identifier(MODID, "santanium_ore"), SANTANIUM_ORE);
-		Registry.register(Registry.ITEM, new Identifier(MODID, "santanium_ore"), new BlockItem(SANTANIUM_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+		//Registry.register(Registry.BLOCK, new Identifier(MODID, "santanium_ore"), SANTANIUM_ORE);
+		//Registry.register(Registry.ITEM, new Identifier(MODID, "santanium_ore"), new BlockItem(SANTANIUM_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 	}
 }
