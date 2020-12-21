@@ -1,7 +1,7 @@
     {
       "parent": "block/cube_all",
       "textures": {
-        "all": "santanium-decorations:block/santanium_ore"
+        "all": "santaniumdecorations:block/santanium_ore"
       }
     }
 

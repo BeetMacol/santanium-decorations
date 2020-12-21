@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "santanium-decorations",
+  "id": "santaniumdecorations",
   "version": "${version}",
 
   "name": "Santanium Decorations",
@@ -22,7 +22,7 @@
     ]
   },
   "mixins": [
-    "santanium-decorations.mixins.json"
+    "santaniumdecorations.mixins.json"
   ],
 
   "depends": {
