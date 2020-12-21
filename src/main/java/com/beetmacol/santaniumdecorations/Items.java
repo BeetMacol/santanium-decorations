@@ -13,6 +13,7 @@ public class Items {
 	public static final ItemGroup SANTANIUM_DECORATIONS_ITEM_GROUP = FabricItemGroupBuilder.create(
 			new Identifier(SantaniumDecorations.MOD_ID, "items")).icon(() -> new ItemStack(Items.SANTANIUM_INGOT)).build();
 	public static final Item SANTANIUM_INGOT = register("santanium_ingot");
+	public static final Item SANTANIUM_ESSENCE = register("santanium_essence");
 
 	private static Item register(String id) {
 		return Registry.register(Registry.ITEM, new Identifier(SantaniumDecorations.MOD_ID, id),  new Item(new FabricItemSettings().group(SANTANIUM_DECORATIONS_ITEM_GROUP)));

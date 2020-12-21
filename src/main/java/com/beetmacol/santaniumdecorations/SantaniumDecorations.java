@@ -1,6 +1,7 @@
 package com.beetmacol.santaniumdecorations;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -19,16 +20,14 @@ public class SantaniumDecorations implements ModInitializer {
 	public static final String MOD_ID = "santanium-decorations";
 	public static final Logger LOGGER = LogManager.getLogger(SantaniumDecorations.class);
 
-	public static String MODID = "santanium-decorations";
-
-	//public static final Block SANTANIUM_ORE = new Block(AbstractBlock.Settings.copy(Blocks.REDSTONE_ORE));
+	public static final Block SANTANIUM_ORE = new Block(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
 
 	@Override
 	public void onInitialize() {
 		LOGGER.info("HO HO HO!");
 		Items.registerItems();
 
-		//Registry.register(Registry.BLOCK, new Identifier(MODID, "santanium_ore"), SANTANIUM_ORE);
-		//Registry.register(Registry.ITEM, new Identifier(MODID, "santanium_ore"), new BlockItem(SANTANIUM_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+		Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "santanium_ore"), SANTANIUM_ORE);
+		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "santanium_ore"), new BlockItem(SANTANIUM_ORE, new Item.Settings().group(Items.SANTANIUM_DECORATIONS_ITEM_GROUP)));
 	}
 }
