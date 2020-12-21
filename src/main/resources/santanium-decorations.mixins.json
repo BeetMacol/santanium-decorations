@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.beetmacol.merrymodjam2020.mixin",
+  "package": "com.beetmacol.santaniumdecorations.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],

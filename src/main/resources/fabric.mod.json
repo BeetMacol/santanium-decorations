@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "kg-bm-merrymodjam",
+  "id": "santanium-decorations",
   "version": "${version}",
 
-  "name": "Merry ModJam 2020 submission",
-  "description": "A mod for Merry ModJam without a name by Kubagliko_PL and BeetMacol",
+  "name": "Santanium Decorations",
+  "description": "A submission for Merry ModJam by Kubagliko_PL and BeetMacol. Adds some decorations made out of a new material called Santanium.",
   "authors": [
     "Kubagliko_PL",
     "BeetMacol"
   ],
   "contact": {
-    "sources": "https://github.com/BeetMacol/merry-modjam-mod"
+    "sources": "https://github.com/BeetMacol/santanium-decorations"
   },
 
   "license": "CC0-1.0",
@@ -18,11 +18,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.beetmacol.merrymodjam2020.MerryModJam2020"
+      "com.beetmacol.santaniumdecorations.SantaniumDecorations"
     ]
   },
   "mixins": [
-    "kg-bm-merrymodjam.mixins.json"
+    "santanium-decorations.mixins.json"
   ],
 
   "depends": {
