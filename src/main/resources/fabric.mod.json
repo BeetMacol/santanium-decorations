@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "com.beetmacol.santaniumdecorations.SantaniumDecorations"
+    ],
+    "client": [
+      "com.beetmacol.santaniumdecorations.SantaniumDecorationsClient"
     ]
   },
   "mixins": [
