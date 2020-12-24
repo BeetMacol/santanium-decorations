@@ -14,6 +14,7 @@ public class Items {
 			new Identifier(SantaniumDecorations.MOD_ID, "items")).icon(() -> new ItemStack(Items.SANTANIUM_INGOT)).build();
 	public static final Item SANTANIUM_INGOT = register("santanium_ingot");
 	public static final Item SANTANIUM_ESSENCE = register("santanium_essence");
+	public static final Item SANTANIUM_GEL = register("santanium_gel");
 
 	private static Item register(String id) {
 		return Registry.register(Registry.ITEM, new Identifier(SantaniumDecorations.MOD_ID, id),  new Item(new FabricItemSettings().group(SANTANIUM_DECORATIONS_ITEM_GROUP)));
