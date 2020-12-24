@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EG",
+    "GE"
+  ],
+  "key": {
+    "E": {
+      "item": "santaniumdecorations:santanium_essence"
+    },
+    "G": {
+      "item": "santaniumdecorations:santanium_gel"
+    }
+  },
+  "result": {
+    "item": "santaniumdecorations:santanium_ingot",
+    "count": 2
+  }
+}
