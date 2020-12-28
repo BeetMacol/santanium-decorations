@@ -3,5 +3,7 @@
   "item.santaniumdecorations.santanium_ingot": "Santanium Ingot",
   "item.santaniumdecorations.santanium_essence": "Santanium Essence",
   "item.santaniumdecorations.santanium_gel": "Santanium Gel",
-  "block.santaniumdecorations.santanium_ore": "Santanium Ore"
+  "item.santaniumdecorations.santa_mass_spawn_egg": "Santa Mass Spawn Egg",
+  "block.santaniumdecorations.santanium_ore": "Santanium Ore",
+  "entity.santaniumdecorations.santa_mass": "Santa Mass"
 }

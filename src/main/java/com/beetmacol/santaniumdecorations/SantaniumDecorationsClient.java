@@ -9,8 +9,8 @@ import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 public class SantaniumDecorationsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        EntityRendererRegistry.INSTANCE.register(SantaniumDecorations.SANTA_SLIME, (entityRenderDispatcher, context) -> {
-            return new SantaSlimeEntityRender(entityRenderDispatcher);
+        EntityRendererRegistry.INSTANCE.register(SantaniumDecorations.SANTA_MASS, (entityRenderDispatcher, context) -> {
+            return new SantaMassEntityRender(entityRenderDispatcher);
         });
     }
 }
