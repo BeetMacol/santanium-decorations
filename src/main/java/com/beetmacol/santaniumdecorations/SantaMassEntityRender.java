@@ -11,13 +11,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 
 public class SantaMassEntityRender extends MobEntityRenderer<SantaMassEntity, SlimeEntityModel<SantaMassEntity>> {
-	private static final Identifier TEXTURE = new Identifier("textures/entity/santa_mass.png");
-
 	public SantaMassEntityRender(EntityRenderDispatcher entityRenderDispatcher) {
 		super(entityRenderDispatcher, new SlimeEntityModel<>(1), 1.0F);
 	}
 
-	public Identifier getTexture(SantaMassEntity santaMassEntity) {
-		return TEXTURE;
+	@Override
+	public Identifier getTexture(SantaMassEntity entity) {
+		return new Identifier("santaniumdecorations", "textures/entity/santa_mass.png");
 	}
 }
