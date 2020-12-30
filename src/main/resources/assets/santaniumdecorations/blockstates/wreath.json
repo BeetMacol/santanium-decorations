@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "santaniumdecorations:block/wreath" },
+    "facing=east": { "model": "santaniumdecorations:block/wreath", "y": 90 },
+    "facing=south": { "model": "santaniumdecorations:block/wreath", "y": 180 },
+    "facing=west": { "model": "santaniumdecorations:block/wreath", "y": 270 }
+  }
+}

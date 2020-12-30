@@ -4,6 +4,7 @@
   "package": "com.beetmacol.santaniumdecorations.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "DoorBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,0 +1,7 @@
+{
+  "parent": "santaniumdecorations:block/template_wreath_door_top",
+  "textures": {
+    "top": "minecraft:block/jungle_door_top",
+    "bottom": "minecraft:block/jungle_door_bottom"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "santaniumdecorations:block/template_wreath_door_bottom_hinge_open",
+  "textures": {
+    "top": "minecraft:block/acacia_door_top",
+    "bottom": "minecraft:block/acacia_door_bottom"
+  }
+}
