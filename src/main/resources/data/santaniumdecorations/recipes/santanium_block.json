@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "santaniumdecorations:santanium_ingot"
+    }
+  },
+  "result": {
+    "item": "santaniumdecorations:santanium_block",
+    "count": 1
+  }
+}

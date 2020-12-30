@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "santaniumdecorations:santanium_block"
+    }
+  ],
+  "result": {
+    "item": "santaniumdecorations:santanium_ingot",
+    "count": 9
+  }
+}

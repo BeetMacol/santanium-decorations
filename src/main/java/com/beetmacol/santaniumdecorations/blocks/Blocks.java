@@ -15,6 +15,7 @@ import net.minecraft.util.registry.Registry;
 public class Blocks {
 	public static final Block SANTANIUM_ORE = register("santanium_ore", new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).hardness(1.2f)
 			.breakByTool(FabricToolTags.SHOVELS, 2).requiresTool().sounds(BlockSoundGroup.SNOW)));
+	public static final Block SANTANIUM_BLOCK = register("santanium_block", new Block(FabricBlockSettings.of(Material.STONE)));
 	public static final Block BAUBLE_RED = register("bauble_red", new BaubleBlock());
 
 	public static Block register(String id, Block block) {
