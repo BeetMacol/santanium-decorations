@@ -22,6 +22,7 @@ public class SantaniumDecorations implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("HO HO HO!");
 		Items.registerItems();
+		Blocks.registerBlocks();
 		SantaniumOre.registerItems();
 
 		FabricDefaultAttributeRegistry.register(SANTA_MASS, SantaMassEntity.createMobAttributes());
