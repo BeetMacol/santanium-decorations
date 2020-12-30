@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "santaniumdecorations:models/bauble_red",
-		"particle": "minecraft:block/red_wool"
+		"0": "santaniumdecorations:models/bauble_light_gray",
+		"particle": "minecraft:block/light_gray_wool"
 	},
 	"elements": [
 		{

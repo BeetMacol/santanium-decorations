@@ -22,7 +22,7 @@ public class BaubleBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.25f, 1.0f - (10.0f/16.0f), 0.25f, 0.75f, 1.0f, 0.75f);
+        return VoxelShapes.cuboid((6.0f/16.0f), 1.0f - (8.0f/16.0f), (6.0f/16.0f), 1.0f - (6.0f/16.0f), 1.0f, 1.0f - (6.0f/16.0f));
     }
 
     @Override
