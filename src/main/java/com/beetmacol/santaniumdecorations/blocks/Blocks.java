@@ -16,8 +16,8 @@ public class Blocks {
 			.breakByTool(FabricToolTags.SHOVELS, 2).requiresTool().sounds(BlockSoundGroup.SNOW)), true);
 
 	public static final Block WREATH = register("wreath", new WreathBlock(FabricBlockSettings.of(Material.LEAVES).hardness(0f).sounds(BlockSoundGroup.GRASS).nonOpaque()), true);
-	public static final Block SANTANIUM_BLOCK = register("santanium_block", new Block(FabricBlockSettings.of(Material.STONE)));
-	public static final Block BAUBLE_RED = register("bauble_red", new BaubleBlock());
+	public static final Block SANTANIUM_BLOCK = register("santanium_block", new Block(FabricBlockSettings.of(Material.STONE)), false);
+	public static final Block BAUBLE_RED = register("bauble_red", new BaubleBlock(), false);
 
 	public static final Block WREATH_OAK_DOOR = register("wreath_oak_door", new WreathDoorBlock(net.minecraft.block.Blocks.OAK_DOOR, AbstractBlock.Settings.of(Material.WOOD, net.minecraft.block.Blocks.OAK_PLANKS.getDefaultMaterialColor()).strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque()), false);
 	public static final Block WREATH_BIRCH_DOOR = register("wreath_birch_door", new WreathDoorBlock(net.minecraft.block.Blocks.BIRCH_DOOR, AbstractBlock.Settings.of(Material.WOOD, net.minecraft.block.Blocks.BIRCH_PLANKS.getDefaultMaterialColor()).strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque()), false);
