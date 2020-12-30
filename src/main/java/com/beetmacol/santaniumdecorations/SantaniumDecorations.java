@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.impl.biome.modification.BiomeModificationImpl;
 import net.minecraft.client.render.SkyProperties;
+import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -57,5 +58,6 @@ public class SantaniumDecorations implements ModInitializer {
 		snowy_biomes.add(BiomeKeys.SNOWY_TUNDRA);
 		snowy_biomes.add(BiomeKeys.ICE_SPIKES);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(snowy_biomes), GenerationStep.Feature.UNDERGROUND_STRUCTURES, santaniumOreOverworld);
+		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(snowy_biomes), SpawnGroup.MONSTER, Entities.SANTA_MASS, 100, 2, 4);
 	}
 }
