@@ -2,6 +2,9 @@
   "itemGroup.santaniumdecorations.items": "Mikołajumowe dekoracje",
   "item.santaniumdecorations.santanium_ingot": "Sztabka Mikołajum",
   "item.santaniumdecorations.santanium_essence": "Esencja Mikołaja",
-  "item.santaniumdecorations.santanium_gel": "Żel Mikołaja",
-  "block.santaniumdecorations.santanium_ore": "Ruda Mikołajum"
+  "item.santaniumdecorations.santanium_gel": "Mikołajowy Żel",
+  "item.santaniumdecorations.santa_mass_spawn_egg": "Jajko mikołajowego żelu",
+  "block.santaniumdecorations.santanium_ore": "Ruda Mikołajum",
+  "block.santaniumdecorations.bauble_red": "Czerwona bąbka",
+  "entity.santaniumdecorations.santa_mass": "Mikołajowy Żel"
 }
