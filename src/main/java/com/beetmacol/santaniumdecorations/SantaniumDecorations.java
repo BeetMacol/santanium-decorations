@@ -1,6 +1,7 @@
 package com.beetmacol.santaniumdecorations;
 
 import com.beetmacol.santaniumdecorations.blocks.Blocks;
+import com.beetmacol.santaniumdecorations.entities.Entities;
 import com.beetmacol.santaniumdecorations.items.Items;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
@@ -16,8 +17,6 @@ public class SantaniumDecorations implements ModInitializer {
 		LOGGER.info("HO HO HO!");
 		Items.registerItems();
 		Blocks.registerBlocks();
-		SantaniumOre.registerItems();
-
-		FabricDefaultAttributeRegistry.register(SANTA_MASS, SantaMassEntity.createMobAttributes());
+		Entities.registerEntities();
 	}
 }

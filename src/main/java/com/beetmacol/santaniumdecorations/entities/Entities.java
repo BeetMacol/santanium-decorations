@@ -15,4 +15,6 @@ public class Entities {
 		FabricDefaultAttributeRegistry.register(entityType, attributes);
 		return Registry.register(Registry.ENTITY_TYPE, new Identifier(SantaniumDecorations.MOD_ID, id), entityType);
 	}
+
+	public static void registerEntities() {}
 }
