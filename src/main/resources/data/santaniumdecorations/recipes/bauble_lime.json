@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"RGR",
+		"GSG",
+		"RGR"
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:glass"
+		},
+		"R": {
+			"item": "minecraft:lime_dye"
+		},
+		"S": {
+			"item": "santaniumdecorations:santanium_ingot"
+		}
+	},
+	"result": {
+		"item": "santaniumdecorations:bauble_lime",
+		"count": 4
+	}
+}

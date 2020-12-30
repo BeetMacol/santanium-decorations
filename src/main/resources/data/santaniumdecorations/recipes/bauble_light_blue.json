@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"RGR",
+		"GSG",
+		"RGR"
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:glass"
+		},
+		"R": {
+			"item": "minecraft:light_blue_dye"
+		},
+		"S": {
+			"item": "santaniumdecorations:santanium_ingot"
+		}
+	},
+	"result": {
+		"item": "santaniumdecorations:bauble_light_blue",
+		"count": 4
+	}
+}
