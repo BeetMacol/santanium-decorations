@@ -66,6 +66,8 @@ public class Blocks {
 	public static final Block RED_CHRISTMAS_SOCKS = registerSocks("red_christmas_socks", MaterialColor.RED);
 	public static final Block BLACK_CHRISTMAS_SOCKS = registerSocks("black_christmas_socks", MaterialColor.BLACK);
 
+	public static final Block STAR = register("star", new Block(FabricBlockSettings.of(Material.METAL)), true);
+
 	/**
 	 * Can be used for outline shapes of directional blocks
 	 * @param direction the direction it will be rotated
