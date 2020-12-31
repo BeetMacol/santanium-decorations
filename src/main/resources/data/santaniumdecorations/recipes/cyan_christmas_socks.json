@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "minecraft:cyan_wool"
+    },
+    {
+      "item": "santaniumdecorations:santanium_ingot"
+    }
+  ],
+  "result": {
+    "item": "santaniumdecorations:cyan_christmas_socks",
+    "count": 2
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" W ",
+		"WSW",
+		" W "
+	],
+	"key": {
+		"W": {
+			"item": "minecraft:blue_wool"
+		},
+		"S": {
+			"item": "santaniumdecorations:santanium_ingot"
+		}
+	},
+	"result": {
+		"item": "santaniumdecorations:blue_present",
+		"count": 1
+	}
+}
