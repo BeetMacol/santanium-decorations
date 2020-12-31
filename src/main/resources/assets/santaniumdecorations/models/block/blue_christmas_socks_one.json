@@ -1,0 +1,6 @@
+{
+  "parent": "santaniumdecorations:block/template_christmas_socks_one",
+  "textures": {
+    "bottom": "minecraft:block/blue_wool"
+  }
+}

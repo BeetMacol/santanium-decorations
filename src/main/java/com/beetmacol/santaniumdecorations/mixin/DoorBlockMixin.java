@@ -57,6 +57,7 @@ public class DoorBlockMixin extends Block {
 
 	/**
 	 * Why overwriting requires javadoc???
+	 * @reason w
 	 * @author BeetMacol
 	 */
 	@Overwrite

@@ -1,7 +1,6 @@
 package com.beetmacol.santaniumdecorations.blocks;
 
 import net.minecraft.block.*;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
@@ -36,16 +35,7 @@ public class WreathBlock extends HorizontalFacingBlock {
 
 	@Override
 	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-		switch(state.get(FACING)) {
-			case EAST:
-				return VoxelShapes.cuboid(0f, 0f, 0f, 0.125f, 1f,  1f);
-			case WEST:
-				return VoxelShapes.cuboid(1-0.125f, 0f, 0f, 1f, 1f,  1f);
-			case SOUTH:
-				return VoxelShapes.cuboid(0f, 0f, 0f, 1f, 1f,  0.125f);
-			default:
-				return VoxelShapes.cuboid(0f, 0f, 1-0.125f, 1f, 1f,  1f);
-		}
+		return Blocks.rotatedCuboid(state.get(FACING), 0f, 0f, 1-0.125f, 1f, 1f,  1f);
 	}
 
 	@Override
@@ -56,7 +46,7 @@ public class WreathBlock extends HorizontalFacingBlock {
 
 	@Override
 	public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
-		return direction.getOpposite() == state.get(FACING) && !state.canPlaceAt(world, pos) ? Blocks.AIR.getDefaultState() : state;
+		return direction.getOpposite() == state.get(FACING) && !state.canPlaceAt(world, pos) ? net.minecraft.block.Blocks.AIR.getDefaultState() : state;
 	}
 
 	@Nullable
