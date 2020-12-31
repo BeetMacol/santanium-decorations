@@ -1,0 +1,7 @@
+{
+  "parent": "santaniumdecorations:block/template_present",
+  "textures": {
+    "box": "minecraft:block/magenta_wool",
+    "particle": "minecraft:block/magenta_wool"
+  }
+}

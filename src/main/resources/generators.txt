@@ -1,7 +1,7 @@
 I used some bash scripts for repetetive models / other stuff.
 
 
-Paste the following to your terminal to use (replace filename of the script if it is different):
+Paste the following to your terminal to use (replace script filename of the script if it is different):
 ./christmas_socks_generator.sh white
 ./christmas_socks_generator.sh orange
 ./christmas_socks_generator.sh magenta

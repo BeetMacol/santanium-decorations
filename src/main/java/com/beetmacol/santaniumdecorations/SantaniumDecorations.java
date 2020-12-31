@@ -5,11 +5,8 @@ import com.beetmacol.santaniumdecorations.entities.Entities;
 import com.beetmacol.santaniumdecorations.items.Items;
 import com.beetmacol.santaniumdecorations.world.SantaHillFeature;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.biome.v1.BiomeModification;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.fabricmc.fabric.impl.biome.modification.BiomeModificationImpl;
-import net.minecraft.client.render.SkyProperties;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -26,7 +23,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class SantaniumDecorations implements ModInitializer {

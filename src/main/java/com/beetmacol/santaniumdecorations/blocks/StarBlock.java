@@ -8,10 +8,11 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
+@SuppressWarnings("deprecation")
 public class StarBlock extends HorizontalFacingBlock {
     public StarBlock() {
         super(FabricBlockSettings.of(Material.METAL).breakInstantly().resistance(1000.0F).breakByHand(true));
@@ -26,6 +27,11 @@ public class StarBlock extends HorizontalFacingBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(Properties.HORIZONTAL_FACING);
+    }
+
+    @Override
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
+        return !state.canPlaceAt(world, pos) ? net.minecraft.block.Blocks.AIR.getDefaultState() : super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
     }
 
     @Override

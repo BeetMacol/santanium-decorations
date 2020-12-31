@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "santaniumdecorations:block/gray_present"
+    },
+    "facing=east": {
+      "model": "santaniumdecorations:block/gray_present",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "santaniumdecorations:block/gray_present",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "santaniumdecorations:block/gray_present",
+      "y": 270
+    }
+  }
+}

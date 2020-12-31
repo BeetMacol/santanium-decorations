@@ -8,6 +8,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -67,6 +68,26 @@ public class Blocks {
 	public static final Block BLACK_CHRISTMAS_SOCKS = registerSocks("black_christmas_socks", MaterialColor.BLACK);
 
 	public static final Block STAR = register("star", new StarBlock(), true);
+
+
+	public static final Block WHITE_PRESENT = register("white_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.WHITE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block ORANGE_PRESENT = register("orange_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.ORANGE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block MAGENTA_PRESENT = register("magenta_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.MAGENTA).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block LIGHT_BLUE_PRESENT = register("light_blue_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.LIGHT_BLUE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block YELLOW_PRESENT = register("yellow_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.YELLOW).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block LIME_PRESENT = register("lime_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.LIME).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block PINK_PRESENT = register("pink_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.PINK).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block GRAY_PRESENT = register("gray_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.GRAY).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block LIGHT_GRAY_PRESENT = register("light_gray_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.LIGHT_GRAY).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block CYAN_PRESENT = register("cyan_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.CYAN).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block PURPLE_PRESENT = register("purple_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.PURPLE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block BLUE_PRESENT = register("blue_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BLUE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block BROWN_PRESENT = register("brown_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BROWN).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block GREEN_PRESENT = register("green_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.GREEN).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block RED_PRESENT = register("red_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.RED).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block BLACK_PRESENT = register("black_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BLACK).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+
+	public static BlockEntityType<PresentBlockEntity> PRESENT_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(SantaniumDecorations.MOD_ID, "present"), BlockEntityType.Builder.create(PresentBlockEntity::new, WHITE_PRESENT, ORANGE_PRESENT, MAGENTA_PRESENT, LIGHT_BLUE_PRESENT, YELLOW_PRESENT, LIME_PRESENT, PINK_PRESENT, GRAY_PRESENT, LIGHT_GRAY_PRESENT, CYAN_PRESENT, PURPLE_PRESENT, BLUE_PRESENT, BROWN_PRESENT, GREEN_PRESENT, RED_PRESENT, BLACK_PRESENT).build(null));
 
 	/**
 	 * Can be used for outline shapes of directional blocks
