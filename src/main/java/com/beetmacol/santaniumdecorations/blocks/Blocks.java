@@ -16,7 +16,7 @@ public class Blocks {
 			.breakByTool(FabricToolTags.SHOVELS, 2).requiresTool().sounds(BlockSoundGroup.SNOW)), true);
 
 	public static final Block WREATH = register("wreath", new WreathBlock(FabricBlockSettings.of(Material.LEAVES).hardness(0f).sounds(BlockSoundGroup.GRASS).nonOpaque()), true);
-	public static final Block SANTANIUM_BLOCK = register("santanium_block", new Block(FabricBlockSettings.of(Material.STONE)), true);
+	public static final Block SANTANIUM_BLOCK = register("santanium_block", new Block(FabricBlockSettings.of(Material.STONE).resistance(1200.0f).slipperiness(1.1f).hardness(5.0f)), true);
 	public static final Block BAUBLE_RED = register("bauble_red", new BaubleBlock(), true);
 	public static final Block BAUBLE_BLACK = register("bauble_black", new BaubleBlock(), true);
 	public static final Block BAUBLE_BLUE = register("bauble_blue", new BaubleBlock(), true);
