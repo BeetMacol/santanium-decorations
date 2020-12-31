@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" W ",
+		"WSW",
+		" W "
+	],
+	"key": {
+		"W": {
+			"item": "minecraft:lime_wool"
+		},
+		"S": {
+			"item": "santaniumdecorations:santanium_ingot"
+		}
+	},
+	"result": {
+		"item": "santaniumdecorations:lime_present",
+		"count": 1
+	}
+}
