@@ -2,11 +2,9 @@ package com.beetmacol.santaniumdecorations.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.client.particle.Particle;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -34,6 +32,11 @@ public class PresentBlock extends HorizontalFacingBlock implements BlockEntityPr
 		setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH).with(EMPTY, true));
 	}
 
+	protected ActionResult open(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, PresentBlockEntity entity) {
+		dropStack(world, pos, entity.getContent());
+		return ActionResult.SUCCESS;
+	}
+
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 		if (state.get(EMPTY)) {
@@ -57,11 +60,25 @@ public class PresentBlock extends HorizontalFacingBlock implements BlockEntityPr
 				for(int i = 0; i < 75; i++) {
 					world.addParticle(ParticleTypes.FIREWORK, pos.getX() + 0.5f, pos.getY() + 0.5f, pos.getZ() + 0.5f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f);
 				}
-				dropStack(world, pos, ((PresentBlockEntity) blockEntity).getContent());
-				return ActionResult.SUCCESS;
+				ActionResult actionResult = open(state, world, pos, player, hand, hit, (PresentBlockEntity) blockEntity);
+				if (actionResult != ActionResult.PASS) return actionResult;
 			}
 		}
 		return ActionResult.PASS;
+	}
+
+	@Override
+	public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+		if (!state.get(EMPTY)) {
+			BlockEntity blockEntity = world.getBlockEntity(pos);
+			if (blockEntity instanceof PresentBlockEntity) {
+				Random r = new Random();
+				for(int i = 0; i < 75; i++) {
+					world.addParticle(ParticleTypes.FIREWORK, pos.getX() + 0.5f, pos.getY() + 0.5f, pos.getZ() + 0.5f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f);
+				}
+				open(state, world, pos, player, null, null, (PresentBlockEntity) blockEntity);
+			}
+		}
 	}
 
 	@Override
