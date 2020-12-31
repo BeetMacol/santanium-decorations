@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Entities {
-	public static final EntityType<SantaMassEntity> SANTA_MASS = register("santa_mass", FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, SantaMassEntity::new).build(), SantaMassEntity.createMobAttributes());
+	public static final EntityType<SantaMassEntity> SANTA_MASS = register("santa_mass", FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, SantaMassEntity::new).dimensions(EntityDimensions.fixed(1, 1)).build(), SantaMassEntity.createMobAttributes());
 
 	public static <T extends LivingEntity> EntityType<T> register(String id, EntityType<T> entityType, DefaultAttributeContainer.Builder attributes) {
 		FabricDefaultAttributeRegistry.register(entityType, attributes);
