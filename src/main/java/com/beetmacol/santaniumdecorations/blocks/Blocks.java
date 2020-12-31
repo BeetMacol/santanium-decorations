@@ -87,7 +87,24 @@ public class Blocks {
 	public static final Block RED_PRESENT = register("red_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.RED).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
 	public static final Block BLACK_PRESENT = register("black_present", new PresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BLACK).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
 
-	public static BlockEntityType<PresentBlockEntity> PRESENT_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(SantaniumDecorations.MOD_ID, "present"), BlockEntityType.Builder.create(PresentBlockEntity::new, WHITE_PRESENT, ORANGE_PRESENT, MAGENTA_PRESENT, LIGHT_BLUE_PRESENT, YELLOW_PRESENT, LIME_PRESENT, PINK_PRESENT, GRAY_PRESENT, LIGHT_GRAY_PRESENT, CYAN_PRESENT, PURPLE_PRESENT, BLUE_PRESENT, BROWN_PRESENT, GREEN_PRESENT, RED_PRESENT, BLACK_PRESENT).build(null));
+	public static final Block WHITE_TRAP_PRESENT = register("white_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.WHITE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block ORANGE_TRAP_PRESENT = register("orange_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.ORANGE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block MAGENTA_TRAP_PRESENT = register("magenta_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.MAGENTA).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block LIGHT_BLUE_TRAP_PRESENT = register("light_blue_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.LIGHT_BLUE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block YELLOW_TRAP_PRESENT = register("yellow_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.YELLOW).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block LIME_TRAP_PRESENT = register("lime_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.LIME).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block PINK_TRAP_PRESENT = register("pink_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.PINK).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block GRAY_TRAP_PRESENT = register("gray_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.GRAY).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block LIGHT_GRAY_TRAP_PRESENT = register("light_gray_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.LIGHT_GRAY).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block CYAN_TRAP_PRESENT = register("cyan_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.CYAN).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block PURPLE_TRAP_PRESENT = register("purple_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.PURPLE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block BLUE_TRAP_PRESENT = register("blue_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BLUE).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block BROWN_TRAP_PRESENT = register("brown_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BROWN).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block GREEN_TRAP_PRESENT = register("green_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.GREEN).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block RED_TRAP_PRESENT = register("red_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.RED).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+	public static final Block BLACK_TRAP_PRESENT = register("black_trap_present", new TrapPresentBlock(FabricBlockSettings.of(Material.WOOL, MaterialColor.BLACK).sounds(BlockSoundGroup.WOOL).nonOpaque()), true);
+
+	public static BlockEntityType<PresentBlockEntity> PRESENT_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(SantaniumDecorations.MOD_ID, "present"), BlockEntityType.Builder.create(PresentBlockEntity::new, WHITE_PRESENT, ORANGE_PRESENT, MAGENTA_PRESENT, LIGHT_BLUE_PRESENT, YELLOW_PRESENT, LIME_PRESENT, PINK_PRESENT, GRAY_PRESENT, LIGHT_GRAY_PRESENT, CYAN_PRESENT, PURPLE_PRESENT, BLUE_PRESENT, BROWN_PRESENT, GREEN_PRESENT, RED_PRESENT, BLACK_PRESENT, WHITE_TRAP_PRESENT, ORANGE_TRAP_PRESENT, MAGENTA_TRAP_PRESENT, LIGHT_BLUE_TRAP_PRESENT, YELLOW_TRAP_PRESENT, LIME_TRAP_PRESENT, PINK_TRAP_PRESENT, GRAY_TRAP_PRESENT, LIGHT_GRAY_TRAP_PRESENT, CYAN_TRAP_PRESENT, PURPLE_TRAP_PRESENT, BLUE_TRAP_PRESENT, BROWN_TRAP_PRESENT, GREEN_TRAP_PRESENT, RED_TRAP_PRESENT, BLACK_TRAP_PRESENT).build(null));
 
 	/**
 	 * Can be used for outline shapes of directional blocks
