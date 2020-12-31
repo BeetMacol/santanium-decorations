@@ -1,6 +1,9 @@
 {
 	"variants": {
-		"": { "model": "santaniumdecorations:block/star" }
+		"facing=north": { "model": "santaniumdecorations:block/star" },
+		"facing=east":  { "model": "santaniumdecorations:block/star", "y":  90},
+		"facing=south": { "model": "santaniumdecorations:block/star", "y": 180 },
+		"facing=west":  { "model": "santaniumdecorations:block/star", "y": 270 }
 	}
 }
 
