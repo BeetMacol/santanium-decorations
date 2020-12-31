@@ -88,7 +88,7 @@ public class Blocks {
 			case EAST:
 				return VoxelShapes.cuboid(1-zMin, yMin, xMin, 1-zMax, yMax, xMax);
 		}
-		throw new IllegalStateException("Incorrect direction argument.");
+		throw new IllegalArgumentException("Incorrect direction argument.");
 	}
 
 	public static Block registerSocks(String id, MaterialColor materialColor) {
