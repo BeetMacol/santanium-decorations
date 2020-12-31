@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "santaniumdecorations:orange_christmas_socks",
+                  "block": "santaniumdecorations:gray_christmas_socks",
                   "properties": {
                     "socks": "2"
                   }
@@ -25,7 +25,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "santaniumdecorations:orange_christmas_socks",
+                  "block": "santaniumdecorations:gray_christmas_socks",
                   "properties": {
                     "socks": "3"
                   }
@@ -34,7 +34,7 @@
               "count": 3
             }
           ],
-          "name": "santaniumdecorations:orange_christmas_socks"
+          "name": "santaniumdecorations:gray_christmas_socks"
         }
       ],
       "conditions": [

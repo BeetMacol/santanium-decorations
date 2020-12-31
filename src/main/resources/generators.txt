@@ -1,0 +1,20 @@
+I used some bash scripts for repetetive models / other stuff.
+
+
+Paste the following to your terminal to use (replace filename of the script if it is different):
+./christmas_socks_generator.sh white
+./christmas_socks_generator.sh orange
+./christmas_socks_generator.sh magenta
+./christmas_socks_generator.sh light_blue
+./christmas_socks_generator.sh yellow
+./christmas_socks_generator.sh lime
+./christmas_socks_generator.sh pink
+./christmas_socks_generator.sh gray
+./christmas_socks_generator.sh light_gray
+./christmas_socks_generator.sh cyan
+./christmas_socks_generator.sh purple
+./christmas_socks_generator.sh blue
+./christmas_socks_generator.sh brown
+./christmas_socks_generator.sh green
+./christmas_socks_generator.sh red
+./christmas_socks_generator.sh black
