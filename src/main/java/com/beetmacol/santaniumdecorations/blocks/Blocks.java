@@ -1,6 +1,5 @@
 package com.beetmacol.santaniumdecorations.blocks;
 
-import com.beetmacol.santaniumdecorations.BaubleBlock;
 import com.beetmacol.santaniumdecorations.SantaniumDecorations;
 import com.beetmacol.santaniumdecorations.items.Items;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
