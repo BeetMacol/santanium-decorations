@@ -20,7 +20,7 @@ public class StarBlock extends HorizontalFacingBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return Blocks.rotatedCuboid(state.get(FACING), 0.25f, 0f, 0.25f, 0.75f, (9.0f/16.0f), 0.75f);
+        return Blocks.rotatedCuboid(state.get(FACING), 0.25f, 0.05f, 0.25f, 0.75f, (9.0f/16.0f), 0.75f);
     }
 
     @Override
