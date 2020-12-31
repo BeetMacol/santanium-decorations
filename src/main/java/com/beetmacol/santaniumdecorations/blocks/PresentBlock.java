@@ -2,9 +2,12 @@ package com.beetmacol.santaniumdecorations.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -19,6 +22,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Random;
 
 @SuppressWarnings("deprecation")
 public class PresentBlock extends HorizontalFacingBlock implements BlockEntityProvider {
@@ -48,6 +53,10 @@ public class PresentBlock extends HorizontalFacingBlock implements BlockEntityPr
 			BlockEntity blockEntity = world.getBlockEntity(pos);
 			if (blockEntity instanceof PresentBlockEntity) {
 				world.removeBlock(pos, false);
+				Random r = new Random();
+				for(int i = 0; i < 75; i++) {
+					world.addParticle(ParticleTypes.FIREWORK, pos.getX() + 0.5f, pos.getY() + 0.5f, pos.getZ() + 0.5f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f, ((r.nextFloat() * 2.0f) - 1.0f) * 0.35f);
+				}
 				dropStack(world, pos, ((PresentBlockEntity) blockEntity).getContent());
 				return ActionResult.SUCCESS;
 			}
