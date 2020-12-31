@@ -58,6 +58,6 @@ public class SantaniumDecorations implements ModInitializer {
 		snowy_biomes.add(BiomeKeys.SNOWY_TUNDRA);
 		snowy_biomes.add(BiomeKeys.ICE_SPIKES);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(snowy_biomes), GenerationStep.Feature.UNDERGROUND_STRUCTURES, santaniumOreOverworld);
-		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(snowy_biomes), SpawnGroup.MONSTER, Entities.SANTA_MASS, 100, 2, 4);
+		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(snowy_biomes), SpawnGroup.MONSTER, Entities.SANTA_MASS, 25, 2, 4);
 	}
 }
