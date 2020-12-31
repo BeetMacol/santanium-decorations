@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "socks=1,facing=north": {
+      "model": "santaniumdecorations:block/white_christmas_socks_one"
+    },
+    "socks=1,facing=east": {
+      "model": "santaniumdecorations:block/white_christmas_socks_one",
+      "y": 90
+    },
+    "socks=1,facing=south": {
+      "model": "santaniumdecorations:block/white_christmas_socks_one",
+      "y": 180
+    },
+    "socks=1,facing=west": {
+      "model": "santaniumdecorations:block/white_christmas_socks_one",
+      "y": 270
+    },
+    "socks=2,facing=north": {
+      "model": "santaniumdecorations:block/white_christmas_socks_two"
+    },
+    "socks=2,facing=east": {
+      "model": "santaniumdecorations:block/white_christmas_socks_two",
+      "y": 90
+    },
+    "socks=2,facing=south": {
+      "model": "santaniumdecorations:block/white_christmas_socks_two",
+      "y": 180
+    },
+    "socks=2,facing=west": {
+      "model": "santaniumdecorations:block/white_christmas_socks_two",
+      "y": 270
+    },
+    "socks=3,facing=north": {
+      "model": "santaniumdecorations:block/white_christmas_socks_three"
+    },
+    "socks=3,facing=east": {
+      "model": "santaniumdecorations:block/white_christmas_socks_three",
+      "y": 90
+    },
+    "socks=3,facing=south": {
+      "model": "santaniumdecorations:block/white_christmas_socks_three",
+      "y": 180
+    },
+    "socks=3,facing=west": {
+      "model": "santaniumdecorations:block/white_christmas_socks_three",
+      "y": 270
+    }
+  }
+}
