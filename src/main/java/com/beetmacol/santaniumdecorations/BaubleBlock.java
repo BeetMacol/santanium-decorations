@@ -17,7 +17,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class BaubleBlock extends Block {
     public BaubleBlock() {
-        super(FabricBlockSettings.of(Material.WOOL));
+        super(FabricBlockSettings.of(Material.WOOL).breakByHand(true).breakInstantly());
     }
 
     @Override
