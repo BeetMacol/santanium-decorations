@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class PresentBlockEntity extends BlockEntity {
-	private ItemStack content;
+	private ItemStack content = ItemStack.EMPTY;
 
 	public PresentBlockEntity() {
 		super(Blocks.PRESENT_BLOCK_ENTITY);
@@ -18,13 +18,8 @@ public class PresentBlockEntity extends BlockEntity {
 	@Override
 	public void fromTag(BlockState blockState, CompoundTag tag) {
 		super.fromTag(blockState, tag);
-		//super.toTag(tag);
-		//Inventories.fromTag(tag, DefaultedList.ofSize(1, content));
-		//content.setTag(tag);
-		//content.
 
 		Tag content_tag = tag.get("content");
-		//content = ItemStack.fromTag((CompoundTag) content_tag);
 		if (content_tag != null) {
 			Tag item_tag = ((CompoundTag) content_tag).get("tag");
 			byte item_count = ((CompoundTag) content_tag).getByte("Count");
@@ -37,9 +32,11 @@ public class PresentBlockEntity extends BlockEntity {
 	@Override
 	public CompoundTag toTag(CompoundTag tag) {
 		super.toTag(tag);
-		//Inventories.toTag(tag, DefaultedList.ofSize(1, content));
-		Tag content_tag = content.toTag(new CompoundTag());
-		tag.put("content", content_tag);
+
+		if (content != null) {
+			Tag content_tag = content.toTag(new CompoundTag());
+			tag.put("content", content_tag);
+		}
 
 		return tag;
 	}
